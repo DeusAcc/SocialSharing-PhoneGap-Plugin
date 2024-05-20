@@ -69,6 +69,9 @@
       </feature>
     </config-file>
 
+  <config-file target="AndroidManifest.xml" parent="/*">
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+  </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/*/application">
       <receiver android:name="nl.xservices.plugins.ShareChooserPendingIntent" android:enabled="true" android:exported="true">
